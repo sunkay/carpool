@@ -1,0 +1,28 @@
+Carpool Schematic
+
+Event
+	- Name
+	- Location
+	- Recurrence
+		- Single
+		- Daily
+		- Weekly
+		- Monthly
+		- Start Date
+		- End Date
+		- Start Time
+		- End Time
+	- [Pools]
+
+
+Pool
+	- Name
+	- [Users]
+
+User
+	- email
+	- firstname
+	- lastname
+	- address
+	- phone
+

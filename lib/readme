@@ -1,0 +1,15 @@
+carpool nginx server
+  - /opt/local/etc/nginx.conf
+  - using port 80
+
+mongod
+  - sudo mongod
+  - mongo
+  - show dbs
+  - use carpool
+  - show collections;
+  - db.carpool.find();
+
+node carpool server
+  - node carpool.js
+  - runs on 3001 

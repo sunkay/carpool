@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport"
+		  content="user-scalable=no, initial-scale=1.0,maximum-scale=1.0" />
+	<meta name="carpool" content="yes"/>	 
+	
+	<link rel="stylesheet" href="carpool.css"/>
+
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" /> 
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
+	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js"></script>
+	
+	    <!-- App specific scripts -->
+    <script src="lib/app.js"></script>
+    
+    <!-- templates -->
+    <script type="text/template" id="activity-list-item-template">    
+      <li><a href="#activity-details" identifier="<%= id %>"><%= date %> - <%= type %></a></li>
+    </script>
+</head>
+
+<body>
+	<div id="main" data-role="page" data-transition="slideup"> 
+		<header data-role="header" data-position="fixed">
+			<h1>Pool</h1>
+		</header>
+
+		<div data-role="content">
+			<ul id="main-list" data-role="listview" data-inset="true">
+				<li><a href="#createPool">Create Event</a></li>
+				<li><a href="#listEventsPage">List Events</a></li>
+				<li><a href="#">Swap</a></li>
+			</ul>
+		</div>
+
+		<footer data-role="footer" data-position="fixed">
+			<h1>Footer</h1>
+		</footer>
+	</div>
+
+<div id="createPool" data-role="page" data-add-back-btn="true" data-back-btn-theme="e"
+		data-transition="slideup"> 
+		<header data-role="header" data-position="fixed">
+			<h1>Create Pool</h1>
+
+		</header>
+
+		<div data-role="content">
+			<form action="data/create" rel="external" method="post">
+
+			<div data-role="fieldcontain">
+				<label for="poolName"> Pool Name: </label>
+				<input type="text" name="poolName" value="" id="poolName" /> 
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="fromLocation"> From Location: </label>
+				<input type="text" name="fromLocation" value="" id="fromLocation" /> 
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="toLocation"> To Location: </label>
+				<input type="text" name="toLocation" value="" id="toLocation" /> 
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="startDate"> Start Date: </label>
+				<input type="text" data-role="datebox" 	
+					data-options='{"mode": "datebox", "useDialogForceFalse": true}' 
+					name="startDate" value="" id="startDate" /> 
+			</div>
+
+			<div data-role="fieldcontain">
+				<label for="endDate"> End Date: </label>
+				<input type="text" data-role="datebox" 	
+					data-options='{"mode": "datebox", "useDialogForceFalse": true}' 
+					name="endDate" value="" id="endDate" /> 
+			</div>
+
+			<div data-role="fieldcontain">
+				<input type="submit" name="submit" value="Send" id="submit" /> 
+			</div>			
+
+			</form>
+		</div>
+
+		<footer data-role="footer" data-position="fixed">
+			<h1>Footer</h1>
+		</footer>
+	</div>
+
+	<div id="listEventsPage" data-role="page" data-add-back-btn="true" data-back-btn-theme="e"
+		data-transition="slideup"> 
+		<header data-role="header" data-position="fixed">
+			<h1>List Events</h1>
+		<a href="#" data-role="button" class="ui-btn-right" 
+				    data-icon="add" id="list-button">List</a>
+		</header>
+
+		<div data-role="content">
+			<!--content will be added via backbone -->
+			<ul id="eventsListView" data-role="listview" data-inset="true">
+			</ul>
+		</div>
+
+		<footer data-role="footer" data-position="fixed">
+			<h1>Footer</h1>
+		</footer>
+	</div>
+
+</body>
+</html>
