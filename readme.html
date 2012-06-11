@@ -1,1 +1,26 @@
-#initialize git
+- is nginx running?
+	- sudo nginx
+	- /opt/local/etc/nginx/nginx.conf
+	- sudo nginx -s reload
+
+- is mongod running
+	- sudo mongod &
+
+- Mongo shell commands
+	- show dbs
+	- use dbname
+	- show collections;
+	
+- is node running
+	- node carpool.js
+	- should be listening on port 3001
+	- 3001 is also configured in nginx. So need to change this eventually
+
+- git
+	git status
+	git add .
+	git commit .
+	git status
+	git remote -v
+	git push origin master
+
