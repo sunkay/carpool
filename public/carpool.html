@@ -49,21 +49,16 @@
 		</header>
 
 		<div data-role="content">
-			<form action="data/create" rel="external" method="post">
+			<form action="addEvent" rel="external" method="post">
 
 			<div data-role="fieldcontain">
-				<label for="poolName"> Pool Name: </label>
-				<input type="text" name="poolName" value="" id="poolName" /> 
+				<label for="eventName"> Event Name: </label>
+				<input type="text" name="eventName" value="" id="eventName" /> 
 			</div>
 
 			<div data-role="fieldcontain">
-				<label for="fromLocation"> From Location: </label>
-				<input type="text" name="fromLocation" value="" id="fromLocation" /> 
-			</div>
-
-			<div data-role="fieldcontain">
-				<label for="toLocation"> To Location: </label>
-				<input type="text" name="toLocation" value="" id="toLocation" /> 
+				<label for="eventLocation"> Event Location: </label>
+				<input type="text" name="eventLocation" value="" id="eventLocation" /> 
 			</div>
 
 			<div data-role="fieldcontain">
@@ -73,12 +68,14 @@
 					name="startDate" value="" id="startDate" /> 
 			</div>
 
+		<!-- should be a recurrence s
 			<div data-role="fieldcontain">
 				<label for="endDate"> End Date: </label>
 				<input type="text" data-role="datebox" 	
 					data-options='{"mode": "datebox", "useDialogForceFalse": true}' 
 					name="endDate" value="" id="endDate" /> 
 			</div>
+		-->
 
 			<div data-role="fieldcontain">
 				<input type="submit" name="submit" value="Send" id="submit" /> 

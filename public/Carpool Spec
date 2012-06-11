@@ -26,3 +26,53 @@ User
 	- address
 	- phone
 
+Stories:
+ - [done] home page with a list: Create Event, List Events
+ - Home page header should say "CARPOOL"
+
+ - [done] List Events
+ 	- get events from the backend and list them on page load
+ 	- add a refresh button & refresh events from the backend when clicked
+ 	- back button to go back to home page
+
+ - Create Event
+ 	-[done] Event contains of Name, Location, Start Date & Time
+ 	- Add back button on the Create Events page
+ 	- Create a form to save an event
+ 	- On Submit message to the user the event was saved
+ 	- Make sure events are unique
+ 	- Add Validations so that all required fields are chcked prior to submit
+ 	- Add recurrance field to events & save it
+ 	- Analysis - Can events be created by all users or only admin users? Why restrict to Admins?
+
+
+ - User Stories
+ 	- Create a user registration form with as minimal information as possible
+ 	- Research a login/user management module for JQuery/Node
+ 	- Create a login/Sign up page
+ 	- Only signed in users can access the application
+ 	- Implement "remember me " functionality
+ 	- Implement Security by using a module
+ 	- Allow user to add a list of friends
+ 	- each friend has an email
+ 	- Send email request to the friend to join tha carpool application
+
+ 
+- POOLS
+	- Create a Pool for an Event. User selects an Event. 
+		- Display an Event Detail Page 
+		- Create Pool For Event Button 	
+	- Create Pool
+		- User adds Friends to the pool (Email first, facebook integration next)
+	- Email requests sent to friends to accept this pool
+	- Create Pool Acceptance Form
+		- Event Details, ACCEPT/REJECT
+	- 
+
+
+
+
+
+
+
+
