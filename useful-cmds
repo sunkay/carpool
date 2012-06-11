@@ -1,0 +1,17 @@
+#get the amazon public DNS from the dashboard
+ssh -i sunkey.pem -l ubuntu ec2-23-22-152-150.compute-1.amazonaws.com
+
+wget http://nodejs.org/dist/v0.6.18/node-v0.6.18.tar.gz
+
+#installing on Mac
+# using mac Ports
+sudo port install mongod
+
+#GIT
+git add
+git commit
+git remote -v (list all remote repositories)
+git remote add
+git remote rm
+git push [alias] [branch]
+git push origin master
