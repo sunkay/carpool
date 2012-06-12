@@ -26,14 +26,24 @@ User
 	- address
 	- phone
 
+	
+Non functional stories
+	- Unit testing jquery mobile with qunit or jasmine
+	- unit testing node app
+
 Stories:
  - [done] home page with a list: Create Event, List Events
- - Home page header should say "CARPOOL"
+ - [done] Home page header should say "CARPOOL"
 
- - [done] List Events
- 	- get events from the backend and list them on page load
+ - [done] List and Delete Events
+ 	-[done] get events from the backend and list them on page load
  	- add a refresh button & refresh events from the backend when clicked
- 	- back button to go back to home page
+ 	-[done] back button to go back to home page
+ 	- Add an edit button to the list events screen
+ 	- Move the refresh button to the footer
+ 	- Clicking edit should make each event in the list have a delete button
+ 	- When you click an event display an Event detail page
+ 	- Add Edit & Delete event only for "ADMIN" users?
 
  - Create Event
  	-[done] Event contains of Name, Location, Start Date & Time
@@ -68,7 +78,6 @@ Stories:
 	- Create Pool Acceptance Form
 		- Event Details, ACCEPT/REJECT
 	- 
-
 
 
 

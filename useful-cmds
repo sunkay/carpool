@@ -15,3 +15,10 @@ git remote add
 git remote rm
 git push [alias] [branch]
 git push origin master
+
+#ignoring files in git
+# add .gitignore to global git configration
+git config --global core.excludesfile ~/.gitignore
+
+# create gitignore file in your home directory
+echo .DS_Store >> ~/.gitignore
