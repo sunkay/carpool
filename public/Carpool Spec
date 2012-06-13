@@ -26,7 +26,7 @@ User
 	- address
 	- phone
 
-	
+
 Non functional stories
 	- Unit testing jquery mobile with qunit or jasmine
 	- unit testing node app
@@ -37,7 +37,7 @@ Stories:
 
  - [done] List and Delete Events
  	-[done] get events from the backend and list them on page load
- 	- add a refresh button & refresh events from the backend when clicked
+ 	-[done] add a refresh button & refresh events from the backend when clicked
  	-[done] back button to go back to home page
  	- Add an edit button to the list events screen
  	- Move the refresh button to the footer
@@ -62,10 +62,10 @@ Stories:
  	- Create a login/Sign up page
  	- Only signed in users can access the application
  	- Implement "remember me " functionality
- 	- Implement Security by using a module
+	 	- Implement Security by using a module
  	- Allow user to add a list of friends
- 	- each friend has an email
- 	- Send email request to the friend to join tha carpool application
+	 	- each friend has an email
+	 	- Send email request to the friend to join tha carpool application
 
  
 - POOLS

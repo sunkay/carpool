@@ -4,6 +4,7 @@
 		  content="user-scalable=no, initial-scale=1.0,maximum-scale=1.0" />
 	<meta name="carpool" content="yes"/>	 
 
+ 	<!-- JQUERY -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" /> 
 
@@ -12,13 +13,20 @@
 
 	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
 	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js"></script>
-	
-	    <!-- App specific scripts -->
+
+	<!-- Logging -->
+	<script type="text/javascript" src="lib/vendor/log4javascript_uncompressed.js"></script>
+
+	<!-- App specific scripts -->
     <script src="lib/app.js"></script>
+	<script	type="text/javascript">
+		loggingInitialize();		
+	</script>
     
     <!-- templates -->
     <script type="text/template" id="activity-list-item-template">    
       <li><a href="#activity-details" identifier="<%= id %>"><%= date %> - <%= type %></a></li>
+
     </script>
 </head>
 
